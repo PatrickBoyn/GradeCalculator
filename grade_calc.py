@@ -11,8 +11,11 @@ if (100 <= grade >= 90):
     print("Your score was {} A".format(str(grade)))
 elif (80 < grade > 70):
     print("Your score was a {} B".format(str(grade)))
-elif (70 < grade > 60):
+elif (70 <= grade > 60):
     print("Your score was a {} C".format(str(grade)))
-elif (60 < grade > 50):
+elif (60 <= grade > 50):
     print("Your score was a {} D".format(str(grade)))
+    print("You did not pass.")
+else:
+    print("Your score was a {} F".format(str(grade)))
     print("You did not pass.")
