@@ -1,9 +1,12 @@
+import math
 num_questions = int(input("Please enter the number of questions: \n"))
 
 num_right = int(input("Please enter the number you got right: \n"))
 
 # Calculates the percent of a grade for a test. 
-grade = num_right/num_questions * 100
+# Math.floor is similar to if not the same as math.floor in JavaScript.
+# It kicks off all the decimal places and makes the final result a whole number.
+grade = math.floor(round((num_right/num_questions * 100), 0))
 
 # I have no idea if this is Python 3 or 2 code.
 # It works either way and I think it's easy to understand.
